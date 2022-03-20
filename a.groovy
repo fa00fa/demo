@@ -1,5 +1,4 @@
 node('master'){
-    clea
     stage('println 99table'){
         println('###########################################################################################');
         println('#                                   printing 99table                                      #');
