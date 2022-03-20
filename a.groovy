@@ -10,7 +10,7 @@ node('master'){
                 git clone https://github.com/fa00fa/demo.git
             fi
             cd demo
-            echo $JENKINS_USER
+            echo $HOME
             python 999table.py
         '''
 
