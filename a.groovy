@@ -5,6 +5,7 @@ node('master'){
         println('###########################################################################################');
         sh'''
             cd ~
+            pwd
             git clone https://github.com/fa00fa/demo.git
             cd demo
             python 999table.py
