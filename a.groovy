@@ -5,7 +5,6 @@ node('Built-In Node'){
         println('###########################################################################################');
         sh'''
             cd $JENKINS_HOME
-            git clone https://github.com/fa00fa/demo.git
             cd demo
             python 999table.py
         '''
