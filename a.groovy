@@ -4,8 +4,7 @@ node('master'){
         println('#                                   printing 99table                                      #');
         println('###########################################################################################');
         sh'''
-            mkdir ${JENKINS_HOME}
-            cd $JENKINS_HOME
+            cd /home/fage/jenkins_home
             git clone https://github.com/fa00fa/demo.git
             cd demo
             python 999table.py
