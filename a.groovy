@@ -4,6 +4,7 @@ node('master'){
         println('#                                   printing 99table                                      #');
         println('###########################################################################################');
         sh'''
+            mkdir ${JENKINS_HOME}
             cd $JENKINS_HOME
             git clone https://github.com/fa00fa/demo.git
             cd demo
