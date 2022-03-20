@@ -1,13 +1,18 @@
 node('master'){
+    clea
     stage('println 99table'){
         println('###########################################################################################');
         println('#                                   printing 99table                                      #');
         println('###########################################################################################');
         sh'''
-            cd ~
+            echo $JENKINS_HOME
             pwd
-            git clone https://github.com/fa00fa/demo.git
+            cd workspace
+            if [ ! -e demo ];then
+                git clone https://github.com/fa00fa/demo.git
+            fi
             cd demo
+            echo $JENKINS_USER
             python 999table.py
         '''
 
