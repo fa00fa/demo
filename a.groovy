@@ -6,7 +6,6 @@ node('master'){
         sh'''
             echo $JENKINS_HOME
             pwd
-            cd workspace
             if [ ! -e demo ];then
                 git clone https://github.com/fa00fa/demo.git
             fi
