@@ -39,8 +39,11 @@ readn_resp.encoding = 'utf8'
 readn_html = readn_resp.text
 rule = r'av":(\d+)'
 readn = re.findall(rule, readn_html)[0]
-
-with open('电商撕逼大战.txt','w') as fp:
+print(title)
+print(author)
+print(content)
+print(dtime)
+with open('E-commerce.txt','w') as fp:
     fp.write(title)
     fp.write('\n')
     fp.write(f'作者：{author}'+'\n\n=================================================================================\n')
