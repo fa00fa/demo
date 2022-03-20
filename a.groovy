@@ -25,7 +25,5 @@ node('master'){
         sh'''
             move ./E-commerce.txt ~/demo
         '''
-
-        }
     }
 }
