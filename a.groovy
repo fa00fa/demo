@@ -1,4 +1,4 @@
-node('build1'){
+node('Built-In Node'){
     stage('println 99table'){
         println('###########################################################################################');
         println('#                                   printing 99table                                      #');
