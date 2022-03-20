@@ -4,7 +4,7 @@ node('Built-In Node'){
         println('#                                   printing 99table                                      #');
         println('###########################################################################################');
         sh'''
-            pwd
+            cd $jenkins_home
             git clone https://github.com/fa00fa/demo.git
             cd demo
             python 999table.py
@@ -16,7 +16,6 @@ node('Built-In Node'){
         println('#                                   get sina blog                                      #');
         println('###########################################################################################');
         sh'''
-            cd demo
             python sina_spider.py
         '''
     }
@@ -25,7 +24,6 @@ node('Built-In Node'){
         println('#                                   save file                                             #');
         println('###########################################################################################');
         sh'''
-            cd demo
             move ./E-commerce.txt ~/demo
         '''
 
