@@ -5,6 +5,7 @@ node('master'){
         println('###########################################################################################');
         sh'''
             source /etc/profile
+            source /home/fage/.bashrc
             echo $JENKINS_HOME
             pwd
             if [ ! -e demo ];then
