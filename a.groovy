@@ -4,7 +4,7 @@ node('master'){
         println('#                                   printing 99table                                      #');
         println('###########################################################################################');
         sh'''
-            #!/bin/bash -ilex
+            source /etc/profile
             echo $JENKINS_HOME
             pwd
             if [ ! -e demo ];then
